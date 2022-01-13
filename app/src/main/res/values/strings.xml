@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Solar System</string>
+    <string name="error_message">Произошла ошибка при загрузке данных</string>
+</resources>
