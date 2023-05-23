@@ -10,7 +10,7 @@ import coil.size.Size
 import com.example.solarsystem.data.await
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
-import com.physics.domain.model.ImageReference
+import com.example.solarsystem.domain.model.ImageReference
 import okio.buffer
 import okio.source
 

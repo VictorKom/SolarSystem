@@ -1,7 +1,7 @@
 package com.example.solarsystem.data.dto
 
 import com.example.solarsystem.domain.model.Planet
-import com.physics.domain.model.ImageReference
+import com.example.solarsystem.domain.model.ImageReference
 
 data class PlanetDto(
     val name: String? = null,

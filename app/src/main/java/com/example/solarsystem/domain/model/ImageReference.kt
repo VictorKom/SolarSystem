@@ -1,4 +1,4 @@
-package com.physics.domain.model
+package com.example.solarsystem.domain.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

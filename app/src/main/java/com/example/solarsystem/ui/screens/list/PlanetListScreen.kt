@@ -1,5 +1,6 @@
 package com.example.solarsystem.ui.screens.list
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -13,6 +14,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
 import androidx.compose.material.Icon
@@ -25,7 +27,6 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.util.lerp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.rememberImagePainter
 import com.example.solarsystem.R
@@ -35,9 +36,6 @@ import com.example.solarsystem.ui.theme.DS
 import com.example.solarsystem.ui.theme.colors.SystemBarsColor
 import com.example.solarsystem.ui.utils.compose.Skeleton
 import com.example.solarsystem.ui.utils.compose.SkeletonShape
-import com.google.accompanist.pager.ExperimentalPagerApi
-import com.google.accompanist.pager.HorizontalPager
-import com.google.accompanist.pager.calculateCurrentOffsetForPage
 import kotlin.math.absoluteValue
 
 @Composable
@@ -77,12 +75,12 @@ private fun Content(planets: List<Planet>, navigateToPlanetOverview: (Planet) ->
     }
 }
 
-@OptIn(ExperimentalPagerApi::class)
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 private fun PlanetPager(size: Int, item: @Composable (Int) -> Unit) {
     HorizontalPager(
-        count = size,
-        itemSpacing = (-20).dp,
+        pageCount = size,
+        pageSpacing = (-20).dp,
         contentPadding = PaddingValues(horizontal = 32.dp),
         modifier = Modifier
             .fillMaxSize()
@@ -94,22 +92,22 @@ private fun PlanetPager(size: Int, item: @Composable (Int) -> Unit) {
                     // Calculate the absolute offset for the current page from the
                     // scroll position. We use the absolute value which allows us to mirror
                     // any effects for both directions
-                    val pageOffset = calculateCurrentOffsetForPage(page).absoluteValue
-                    // We animate the scaleX + scaleY, between 85% and 100%
-                    lerp(
-                        start = 0.85f,
-                        stop = 1f,
-                        fraction = 1f - pageOffset.coerceIn(0f, 1f)
-                    ).also { scale ->
-                        scaleX = scale
-                        scaleY = scale
-                    }
-                    // We animate the alpha, between 50% and 100%
-                    alpha = lerp(
-                        start = 0.5f,
-                        stop = 1f,
-                        fraction = 1f - pageOffset.coerceIn(0f, 1f)
-                    )
+//                    val pageOffset = calculateCurrentOffsetForPage(page).absoluteValue
+//                    // We animate the scaleX + scaleY, between 85% and 100%
+//                    lerp(
+//                        start = 0.85f,
+//                        stop = 1f,
+//                        fraction = 1f - pageOffset.coerceIn(0f, 1f)
+//                    ).also { scale ->
+//                        scaleX = scale
+//                        scaleY = scale
+//                    }
+//                    // We animate the alpha, between 50% and 100%
+//                    alpha = lerp(
+//                        start = 0.5f,
+//                        stop = 1f,
+//                        fraction = 1f - pageOffset.coerceIn(0f, 1f)
+//                    )
                 }
                 .fillMaxSize()
                 .padding(top = 4.dp, start = 8.dp, end = 8.dp, bottom = 16.dp),
