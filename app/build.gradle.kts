@@ -61,17 +61,17 @@ dependencies {
     // Compose
     implementationCompose()
     implementation(Dependencies.composeNavigation)
-    implementation(Dependencies.accompanistNavigationMaterial)
     implementation(Dependencies.accompanistSystemUiController)
+    implementation(Dependencies.accompanistPlaceholder)
 
     // Hilt
     implementation(Dependencies.hilt)
     kapt(Dependencies.hiltCompiler)
-    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
+    implementation(Dependencies.hiltNavigation)
 
     //reflection
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.10")
-    implementation("com.google.code.gson:gson:2.10.1")
+    implementation(Dependencies.kotlinReflect)
+    implementation(Dependencies.gson)
 
     implementation(Dependencies.coil)
 }

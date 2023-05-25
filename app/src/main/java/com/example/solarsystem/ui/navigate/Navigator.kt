@@ -1,27 +1,27 @@
 package com.example.solarsystem.ui.navigate
 
+import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.receiveAsFlow
 import javax.inject.Inject
-import kotlinx.coroutines.flow.MutableSharedFlow
-import kotlinx.coroutines.flow.SharedFlow
-import kotlinx.coroutines.flow.asSharedFlow
 
 class NavigatorImpl @Inject constructor() : Navigator {
 
-    private val _screenFlow = MutableSharedFlow<String>(extraBufferCapacity = 1)
-    override val screenFlow = _screenFlow.asSharedFlow()
+    private val _screenFlow = Channel<String>(capacity = 10)
+    override val screenFlow = _screenFlow.receiveAsFlow()
 
     override fun navigateTo(route: String) {
-        _screenFlow.tryEmit(route)
+        _screenFlow.trySend(route)
     }
 
     override fun back() {
-        _screenFlow.tryEmit(BACK_ROUTE)
+        _screenFlow.trySend(BACK_ROUTE)
     }
 }
 
 interface Navigator {
 
-    val screenFlow: SharedFlow<String>
+    val screenFlow: Flow<String>
 
     fun navigateTo(route: String)
 

@@ -27,7 +27,9 @@ val lightColors = run {
         onError = dark,
         textPrimary = dark.copy(alpha = .87f),
         textSecondary = dark.copy(alpha = .60f),
-        textTertiary = dark.copy(alpha = .38f)
+        textTertiary = dark.copy(alpha = .38f),
+        tintGray300 = DS.palette.gray300day,
+        tintGray500 = DS.palette.gray500day,
     )
 }
 
@@ -53,6 +55,8 @@ val darkColors = run {
         onError = dark,
         textPrimary = dark.copy(alpha = .98f),
         textSecondary = dark.copy(alpha = .60f),
-        textTertiary = dark.copy(alpha = .38f)
+        textTertiary = dark.copy(alpha = .38f),
+        tintGray300 = DS.palette.gray300night,
+        tintGray500 = DS.palette.gray500night,
     )
 }

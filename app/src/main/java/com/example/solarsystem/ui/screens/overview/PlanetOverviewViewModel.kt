@@ -14,5 +14,5 @@ class PlanetOverviewViewModel @Inject constructor(
     navigator: Navigator
 ) : ViewModel(), Navigator by navigator {
 
-    val planet = stateHandle.get<Planet>(Screen.PlanetOverview.PLANET)
+    val planet = stateHandle.get<Planet>(Screen.PlanetOverview.PLANET_ARG)
 }

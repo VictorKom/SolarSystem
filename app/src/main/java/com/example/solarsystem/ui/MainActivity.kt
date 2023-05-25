@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
 @Composable
 fun SolarSystemApp(navigator: Navigator) {
     SolarSystemTheme {
-        SystemBarsColor()
         AppNavigation(navController = rememberNavController(), navigator = navigator)
     }
 }

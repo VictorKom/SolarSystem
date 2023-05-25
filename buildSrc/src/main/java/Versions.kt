@@ -12,6 +12,7 @@ object Versions {
     const val kotlin = "1.8.21"
 
     const val coroutines = "1.6.0"
+    const val gson = "2.10.1"
     const val appCompatVersion = "1.5.0"
     const val materialVersion = "1.6.1"
     const val gms = "4.3.15"
@@ -22,6 +23,7 @@ object Versions {
     const val composeActivity = "1.5.1"
     const val accompanist = "0.28.0"
     const val navigation = "2.5.3"
+    const val hiltNavigation = "1.0.0"
     const val lifecycle = "2.5.1"
     const val coil = "1.4.0"
     const val activity = "1.5.1"

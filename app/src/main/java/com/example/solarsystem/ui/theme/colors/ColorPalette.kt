@@ -7,6 +7,10 @@ class DSColorPalette internal constructor() {
     val white = Color(0xFFFFFFFF)
 
     val gray150 = Color(0xFFE8E8E8)
+    val gray300day = Color(0xFFC7C7CC)
+    val gray300night = Color(0xFF48484A)
+    val gray500day = Color(0xFFE5E5EA)
+    val gray500night = Color(0xFF2C2C2E)
     val gray800 = Color(0xFF363636)
 
     val red500 = Color(0xFFFF2E43)

@@ -3,6 +3,8 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 object Dependencies {
     // Core
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+    const val kotlinReflect = "org.jetbrains.kotlin:kotlin-reflect:${Versions.kotlin}"
+    const val gson = "com.google.code.gson:gson:${Versions.gson}"
 
     // Ui
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompatVersion}"
@@ -10,12 +12,6 @@ object Dependencies {
     const val material = "com.google.android.material:material:${Versions.materialVersion}"
     const val accompanistSystemUiController =
         "com.google.accompanist:accompanist-systemuicontroller:${Versions.accompanist}"
-    const val accompanistFlowlayout =
-        "com.google.accompanist:accompanist-flowlayout:${Versions.accompanist}"
-    const val accompanistNavigationMaterial =
-        "com.google.accompanist:accompanist-navigation-material:${Versions.accompanist}"
-    const val accompanistPager =
-        "com.google.accompanist:accompanist-pager:${Versions.accompanist}"
     const val accompanistPlaceholder =
         "com.google.accompanist:accompanist-placeholder:${Versions.accompanist}"
 
@@ -45,6 +41,7 @@ object Dependencies {
     // Navigation
     const val composeNavigation = "androidx.navigation:navigation-compose:${Versions.navigation}"
     const val navigation = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+    const val hiltNavigation = "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigation}"
 
     // Compose
     const val composeActivity = "androidx.activity:activity-compose:${Versions.composeActivity}"

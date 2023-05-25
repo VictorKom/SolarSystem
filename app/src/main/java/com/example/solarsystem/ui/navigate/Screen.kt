@@ -17,10 +17,10 @@ sealed class Screen {
 
     object PlanetOverview : Screen() {
 
-        const val PLANET = "planet"
-        private const val screeName = "planetOverView"
+        const val PLANET_ARG = "planet"
+        private const val screeName = "planetOverview"
 
-        override val route: String get() = "$screeName/{$PLANET}"
+        override val route: String get() = "$screeName/{$PLANET_ARG}"
 
         fun createRoute(planet: Planet) = "$screeName/${Uri.encode(Gson().toJson(planet))}"
     }

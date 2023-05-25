@@ -12,7 +12,7 @@ data class PlanetDto(
         fun convert(planetDto: PlanetDto): Planet {
             return Planet(
                 name = planetDto.name ?: "",
-                coverUrl = ImageReference(planetDto.cover ?: ""),
+                imageReference = ImageReference(planetDto.cover ?: ""),
                 description = planetDto.description ?: ""
             )
         }

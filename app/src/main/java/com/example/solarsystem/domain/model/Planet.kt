@@ -6,6 +6,6 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class Planet(
     val name: String,
-    val coverUrl: ImageReference,
+    val imageReference: ImageReference,
     val description: String
 ) : Parcelable

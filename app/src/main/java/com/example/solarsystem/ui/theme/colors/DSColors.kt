@@ -27,6 +27,8 @@ data class DSColors(
     val textPrimary: Color,
     val textSecondary: Color,
     val textTertiary: Color,
+    val tintGray300: Color,
+    val tintGray500: Color,
 ) {
     fun toMaterialColors(): Colors {
         return Colors(
