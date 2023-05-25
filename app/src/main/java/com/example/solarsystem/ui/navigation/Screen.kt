@@ -1,4 +1,4 @@
-package com.example.solarsystem.ui.navigate
+package com.example.solarsystem.ui.navigation
 
 import android.net.Uri
 import com.example.solarsystem.domain.model.Planet

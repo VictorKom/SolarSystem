@@ -1,4 +1,4 @@
-package com.example.solarsystem.ui.navigate
+package com.example.solarsystem.ui.navigation
 
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow

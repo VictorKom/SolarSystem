@@ -1,4 +1,4 @@
-package com.example.solarsystem.ui.navigate
+package com.example.solarsystem.ui.navigation
 
 import android.os.Bundle
 import androidx.navigation.NavType

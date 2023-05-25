@@ -1,17 +1,16 @@
-package com.example.solarsystem.ui.screens.list
+package com.example.solarsystem.ui.screens.planet_list
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.solarsystem.domain.Interactor
 import com.example.solarsystem.domain.util.Lce
 import com.example.solarsystem.domain.model.Planet
-import com.example.solarsystem.ui.navigate.Navigator
-import com.example.solarsystem.ui.navigate.Screen
+import com.example.solarsystem.ui.navigation.Navigator
+import com.example.solarsystem.ui.navigation.Screen
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 @HiltViewModel

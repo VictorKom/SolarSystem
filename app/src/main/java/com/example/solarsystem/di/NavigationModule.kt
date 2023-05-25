@@ -1,7 +1,7 @@
 package com.example.solarsystem.di
 
-import com.example.solarsystem.ui.navigate.Navigator
-import com.example.solarsystem.ui.navigate.NavigatorImpl
+import com.example.solarsystem.ui.navigation.Navigator
+import com.example.solarsystem.ui.navigation.NavigatorImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

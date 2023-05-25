@@ -1,4 +1,4 @@
-package com.example.solarsystem.ui.navigate
+package com.example.solarsystem.ui.navigation
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,7 +9,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.example.solarsystem.ui.screens.list.PlanetListScreen
+import com.example.solarsystem.ui.screens.planet_list.PlanetListScreen
 import com.example.solarsystem.ui.screens.overview.PlanetOverviewScreen
 import com.example.solarsystem.ui.theme.DS
 import com.example.solarsystem.ui.theme.colors.SystemBarsColor

@@ -3,8 +3,8 @@ package com.example.solarsystem.ui.screens.overview
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import com.example.solarsystem.domain.model.Planet
-import com.example.solarsystem.ui.navigate.Navigator
-import com.example.solarsystem.ui.navigate.Screen
+import com.example.solarsystem.ui.navigation.Navigator
+import com.example.solarsystem.ui.navigation.Screen
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
